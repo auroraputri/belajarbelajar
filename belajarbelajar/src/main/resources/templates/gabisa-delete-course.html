@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+<!--  <meta charset="UTF-8" />-->
+<!--  <meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
+<!--  <meta name="vieport" content="width=device-width, initial-scale=1.0" />-->
+<!--  <title>Add Course</title>-->
+  <title>BelajarBelajar</title>
+  <object th:include="fragments/fragment :: css" th:remove="tag"></object>
+  <object th:include="fragments/fragment :: js" th:remove="tag"></object>
+</head>
+<body>
+<nav th:replace="fragments/fragment :: navbar (${'/course'})"></nav>
+<h2
+        th:text="'Course dengan code Course ' + ${code} + ' tidak bisa didelete karena belum terdaftar.'"
+></h2>
+<a href="/course/viewAll">Kembali</a>
+</body>
+</html>

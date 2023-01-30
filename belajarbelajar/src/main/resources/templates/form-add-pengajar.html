@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+  <title>BelajarBelajar</title>
+  <object th:include="fragments/fragment :: css" th:remove="tag"></object>
+  <object th:include="fragments/fragment :: js" th:remove="tag"></object>
+</head>
+<body>
+<nav th:replace="fragments/fragment :: navbar (${'/course'})"></nav>
+<div class="container">
+  <div class="card m-4 p-4">
+    <div class="card-body">
+      <div class="justify-content-center">
+        <h2>Tambah Pengajar</h2>
+        <br>
+        <form th:action="@{/pengajar/add}" th:object="${pengajar}" method="POST">
+          <input type="hidden" th:field="*{course}" />
+
+          Nama Pengajar : <br>
+          <input class="form-control" type="text" name="namaPengajar"/>
+          <br>
+
+          Tipe Pengajar : <br>
+          <select name="isPengajarUniversitas">
+            <option value="1">Pengajar Universitas</option>
+            <option value="0">Bukan Pengajar Universitas</option>
+          </select>
+          <br><br>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <a class="btn btn-primary" href="/">Home</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
