@@ -1,12 +1,11 @@
-# Tutorial APAP
+# Tutorial APAP - BelajarBelajar
 ## Authors
 * **Aurora Putri Kumala Bakti** - *2006597323* - *APAP A*
 
----
-## Tutorial 8
-### What I have learned today
-### GitLab
+Sebuah proyek web development yang memiliki fungsionalitas untuk menyimpan data mahasiswa, dosen, serta mata kuliah yang tersedia. Proyek ini mengimplementasikan CRUD di dalamnya. 
 
+--- Latihan ---
+## Tutorial 8
 1. Apa itu Dockerfile dan docker-compose.yaml? Apa fungsinya?
 - Dockerfile, sebuah text sederhana yang digunakan untuk membangun sebuah Docker Image
   - digunakan untuk membuat image secara otomatis dengan membaca instruksi yang ada pada Dockerfile
@@ -61,9 +60,6 @@ Saya mengalami kendala teknis dan beberapa percobaan saat menjalankan nginx sert
 
 ---
 ## Tutorial 7
-### What I have learned today
-### GitLab
-
 1. Jelaskan secara singkat perbedaan Otentikasi dan Otorisasi! Di bagian mana (dalam kode yang telah anda buat) konsep tersebut diimplementasi?
 Perbedaan otentikasi dan otorisasi berada pada tingkatannya. Suatu otentikasi berada pada halaman awal sekali suatu aplikasi yaitu misal memperiksa identitas orang untuk memberikan akses ke sistem. Sedangkan Otorisasi memberikan izin orang tersebut untuk mengakses fitur-fitur dalam aplikasi.
 - Otentikasi,
@@ -107,9 +103,6 @@ Class UserDetailsServiceImpl.java digunakan untuk mengambil data user pada datab
 
 ---
 ## Tutorial 6
-### What I have learned today
-### GitLab
-
 1. Perhatikan apa yang terjadi pada file index.html pada branch feat/tutorial-6-advancedgit-1. Apa yang terjadi setelah git cherry-pick dilakukan? Apakah kita bisa melakukan cherrypick tanpa harus melakukan commit?
 Setelah melakukan git cherry-pick, isi dari index.html yang awalnya kosong pada branch feat/tutorial-6-advancedgit-1 menjadi terisi bagian head dan body seperti yang dimiliki file index.html pada branch tut6-for-cherrypick. Kita tidak bisa melakukan cherrypick tanpa melakukan commit. Hal tersebut dikarenakan git cherry-pick membutuhkan sebuah parameter untuk menjalankan fungsinya di mana parameter tersebut ialah kode yang tersimpan saat melakukan commit pada branch tut6-for-cherrypick. Untuk itu diperlukannya sebuah commit dari branch asal yang akan ditempelkan kepada branch tujuan menggunakan cherrypick.
 
@@ -143,9 +136,6 @@ Hal yang terjadi pada file abc.txt adalah baris kedua yaitu "this is second line
 >https://initialcommit.com/blog/git-reset
 
 ## Tutorial 5
-### What I have learned today
-### GitLab
-
 1. Apa itu Postman? Apa kegunaannya?
 Postman merupakan sebuah aplikasi untuk melakukan API testing. Postman bisa menjadi wadah untuk kita yang melakukan pengecekan dan bertindak sebagai HTTP client yang melakukan HTTP request. Dengan Postman, kita diberikan berbagai kemudahan dan interface yang mudah dimengerti. Postman memiliki method, response codes, collections, environments, dan tester. Salah satu keunggulan Postman, mereka bisa melakukan Sharing Collection API for Documentation, Testing API, Realtime Collaboration Team, Monitoring API, Integration.
 >https://www.encora.com/insights/what-is-postman-api-test
@@ -179,9 +169,6 @@ WebClient biasa kita definikan pada implementasi dari service. Kegunaan atribut 
 
 
 ## Tutorial 4
-### What I have learned today
-### GitLab
-
 1. Jelaskan perbedaan th:include dan th:replace!
 - th:include, menambahkan sebuah fragment spesifik sebagai body dari host tag tersebut.
 - th:replace, mengubah host tag ada saat itu dan mengubahnya dengan tag baru yang di-define pada baris replace tersebut. Hal ini menandakan host tag akan diubah dengan fragment tag yang spesifik.
@@ -222,9 +209,6 @@ Dapat dilihat pada code diberikut,
 ```
 
 ## Tutorial 3
-### What I have learned today
-### GitLab
-
 1. Tolong jelaskan secara singkat apa kegunaan dari anotasi-anotasi yang ada pada model (@AllArgsConstructor, @NoArgsConstructor, @Setter, @Getter, @Entity, @Table)
 __Anotasi:__
 - @AllArgsConstructor, untuk men-generate constructor dengan 1 parameter pada setiap field yang ada di dalam kelas. Pada anotasi ini jika ditandai juga dengan anotasi @NonNull akan dilakukan pemeriksaan null pada tiap parameternya. 
@@ -257,9 +241,6 @@ Perbedaanya adalah findByCodeUsingQuery mengeksekusikan query sql langusng secar
 
 
 ## Tutorial 2
-### What I have learned today
-### GitLab
-
 1. Cobalah untuk menambahkan sebuah Course dengan mengakses link berikut: http://localhost:8080/course/add?code=APAP&nameCourse=APAP%20Tutorial2&description=2020%20Fasilkom&jumlahSks=3 Apa yang terjadi? Jelaskan mengapa hal tersebut dapat terjadi
 Terjadi error. Error pada internal server error dengan kode status 500. Hal tersebut dikarenakan template atau html untuk link tersebut belum terdaftar sehingga saat controller memanggil tidak bisa atau terjadi error. Saya belum memeliki html yang dapat menampilkan request tersebut atau template dengan nama file html "add-course.html". 
 
@@ -278,10 +259,7 @@ Saya menambakan matakuliah dengan kode CRM, nameCourse Manajemen Hubungan Pelang
 ![](belajarbelajar/images/addCourse.png)
 
 
-
 ## Tutorial 1
-### What I have learned today
-### GitLab
 1. Apa itu Issue Tracker? Apa saja masalah yang dapat diselesaikan dengan Issue Tracker?
 Issue Tracker adalah sebuah *tools* yang dihadirkan oleh GitLab yang membantu para usernya untuk berkolaborasi,merencanakan, dan berkreativitas dalam memecahkan masalahnya. Masalah yang dapat diselesaikan dengan Issue Tracker menurut saya adalah mereka bisa menjadi pengingat dan juga saluran informasi utama untuk mengetahui *progress* dari *project-project* yang sedang berjalan. 
 >sumber: https://www.ibm.com/garage/method/practices/think/tool_github_issues/ 
@@ -312,8 +290,3 @@ Banyak sekali produk yang dalam dikembangkan dengan Spring Framework. Produk ter
 Keduanya sama-sama membantu mendapatkan data dari link URL dan URI dan mengelolanya pada bagian controller. Perbedaannya terletak pada @RequestParam mengambil query parameters sedangkan @PathVariable mengambil data atau nilai yang nantinya akan di ekstrak dari URI. 
 @RequestParam cocok digunakan untuk web yang masih tradisional sedangkan @PathVariable cocok untuk web yang RESTful di mana URL-nya biasanya berisi angka-angka yang unik seperti ISBN dan lainnya.
 >sumber: https://javarevisited.blogspot.com/2017/10/differences-between-requestparam-and-pathvariable-annotations-spring-mvc.html#axzz7eDMYtTUS
-
-### What I did not understand
-- [x] Kenapa saya harus belajar APAP?
-> Karena APAP membuat saya menjadi lebih memahami dasar arsitektur atau mungkin layer dalam sebuah aplikasi. Hal ini sangat bermanfaat terlebih lagi saya merupakan mahasiswa CS
-- [] Saya masih belum paham betul elemen-elemen di dalam spring
